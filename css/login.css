@@ -1,0 +1,91 @@
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 29wv;
+    margin: 0 auto;
+}
+
+.main__header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 40%;
+    height: 400px;
+    box-shadow: 0px 10px 20px rgb(5 54 77 /50%) ;
+    margin: 80px auto;
+}
+
+.form1 form{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.form1 form input,label:focus{
+    outline: none;
+}
+.form1 form input, label,button{
+    margin-top: 5px;
+    width: 300px;
+   
+}
+.form1 form input{
+    padding: 10px;
+    border: 1px solid rgb(72, 179, 250);
+    border-radius: 3px;
+    font-size: 19px;
+    font-weight: 500;
+}
+::placeholder{
+    font-size: 18px;
+}
+.form1 form label{
+    font-size: 19px;
+    font-weight: 500;
+    color:rgb(72, 179, 250) ;
+    cursor: pointer;
+}
+
+
+.form1 form button{
+ cursor: pointer; 
+width: 323px;
+height: 37px;
+background: rgb(255, 145, 0);
+border-radius: 3px;
+border: none;
+color: white;
+font-size: 18px;
+font-weight: 500;
+margin-top: 20px;
+}
+.form1 form button:active{
+border: 1px solid rgb(255, 145, 0);
+background:white;
+color: rgb(72, 179, 250) ;
+}
+@media (max-width:1000px){
+    .container{
+        width: 102.5% ;       
+        position: relative;
+        top: -7px;
+        left: -7px;
+        right: -17px;
+        bottom: -40px;
+       }
+    
+    .main__header{
+        box-shadow: none;
+        width: 100%;
+        height: 10%;
+    }
+}
+
+
